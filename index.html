@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--ICONO VLO-->
+    <link rel="icon" type="image/png" href="../images/vlo.png"> 
+    <!--Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            
+        }
+
+        .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+    </style>
+    <title>Inicio</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!--BOOTSTRAP JS-->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+  <!-- HEADER CON NAVBAR -->
+  
+  <header id="header">
+    <div class="header-right">
+      <a href="../pages/login.html" class="header-link"><i class="fas fa-sign-out-alt"></i>CERRAR SESIÓN</a>
+      
+      <div class="nav-circles">
+        <div class="circle"><i class="fas fa-bell"></i></div>
+        <div class="circle"><i class="fas fa-user"></i></div>
+        <div class="circle"><i class="fas fa-cog"></i></div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="nav-links">
+        
+        
+
+        <a href="../index.html" class="nav-link-home"><i class="fas fa-home"></i> HOME</a>
+          
+        <a href="#" class="nav-link">Repartos</a>
+        <a href="../pages/articulos.html" class="nav-link">Artículos</a>
+        <a href="#" class="nav-link">Caja</a>
+        <a href="#" class="nav-link">Clientes</a>
+        <a href="#" class="nav-link">Compras</a>
+        <a href="#" class="nav-link">Informes</a>
+        <a href="#" class="nav-link">Paramétricas</a>
+        <a href="#" class="nav-link">Prestamos</a>
+        <a href="#" class="nav-link">Proveedores</a>
+        <a href="../pages/ventas.html" class="nav-link button">Ventas</a>
+      </div>
+    </nav>
+    
+  </header>
+
+
+  <!--MAIN-->
+
+  <main id="main">
+    <div class="welcome-message">
+      <h1>¡Hola Florencia! Elegí alguna de las siguientes opciones para comenzar a trabajar.</h1>
+    </div>
+
+
+
+    <div class="options-container">
+      <button class="arrow-btn left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="options-cards">
+        <a href="#" class="option-card">
+          <span>Clientes</span>
+        </a>
+        <a href="../pages/ventas.html" class="option-card">
+          <span>Ventas</span>
+        </a>
+        <a href="../pages/articulos.html" class="option-card">
+          <span>Artículos</span>
+        </a>
+        <a href="../pages/nueva-venta.html" class="option-card">
+          <span>Nueva Venta</span>
+        </a>
+      </div>
+      
+      <button class="arrow-btn right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </main>
+
+
+  <!--FOOTER-->
+
+  <footer class="footer">
+
+        <div class="container">
+          <div class="footer-grid">
+
+            <!-- LOGO Y MAPA -->
+            <div class="footer-column">
+
+              <div class="logo-container">
+                <img src="../images/vlo.png" alt="VLO System" class="logo">
+                <h2 class="company-name">VLO System</h2>
+              </div>
+
+              <div class="map-container">
+                <img src="../images/Mapa-ubicacion-DM.png" alt="Company Location Map" class="map">
+              </div>
+            
+            </div>
+    
+
+            <!-- MENU PRINCIPAL -->
+            <div class="footer-column">
+
+              <h3 class="footer-heading">Menú principal</h3>
+              <nav>
+                <ul class="footer-links">
+                  <li><a href="#">Repartos</a></li>
+                  <li><a href="../pages/articulos.html">Artículos</a></li>
+                  <li><a href="#">Caja</a></li>
+                  <li><a href="#">Clientes</a></li>
+                  <li><a href="#">Compras</a></li>
+                  <li><a href="#">Informes</a></li>
+                  <li><a href="#">Paramétricas</a></li>
+                  <li><a href="#">Prestamos</a></li>
+                  <li><a href="#">Proveedor</a></li>
+                  <li><a href="../pages/ventas.html">Ventas</a></li>
+                </ul>
+              </nav>
+            </div>
+    
+            <!-- PERFIL -->
+            <div class="footer-column">
+              <h3 class="footer-heading">Perfil</h3>
+              <nav>
+                <ul class="footer-links">
+                  <li><a href="#">Mi perfil</a></li>
+                  <li><a href="#">Crear perfil</a></li>
+                  <li><a href="../pages/login.html">Cerrar sesión</a></li>
+                  <li><a href="#">Configuración de perfiles</a></li>
+                </ul>
+              </nav>
+            </div>
+    
+            <!-- CONFIGURACION -->
+            <div class="footer-column">
+              <h3 class="footer-heading">Configuración</h3>
+              <nav>
+                <ul class="footer-links">
+                  <li><a href="#">Programas</a></li>
+                  <li><a href="#">Configuración del sistema</a></li>
+                  <li><a href="#">Ayuda</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+    
+
+          <!--Copyright and Social Media -->
+          <div class="footer-bottom">
+            <p class="copyright">&copy;2025 VLO System. All rights reserved</p>
+            <div class="social-icons">
+              <a href="" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+  </footer>
+
+
+
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
