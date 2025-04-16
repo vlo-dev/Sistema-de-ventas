@@ -181,8 +181,8 @@
   
   .option-card:hover {
     
-    background-color: rgb(214, 214, 214);
-    color: #302d20;
+    background-color: rgb(228, 189, 18);
+    color: #272727;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -290,10 +290,8 @@
 
 
 #filtro-tabla {
-  width: 1320px;
+  width: 1420px;
   padding: 25px;
-  border-radius: 15px;
-  border: 1px solid rgb(185, 185, 185);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -306,7 +304,7 @@
 
 .filtros.b {
   height: 37px;
-  
+  width: 250px;
 }
 .filtros.a{
   width: 550px;
@@ -334,12 +332,12 @@
 /* BOTONES */
 .btn.btn-success.code {
   color:#272727;
-  background-color: #d6b007;
+  background-color: #fdfdfd;
   border-color: #d6b007;
 }
 .btn.btn-success.code:hover{
-  color: #d6b007;
-  background-color: #272727;
+  color: #272727;
+  background-color: #d6b007;
   border-color: #272727;
 }
 .btn.btn-primary.a,
