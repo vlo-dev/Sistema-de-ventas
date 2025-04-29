@@ -1,0 +1,128 @@
+
+
+
+
+/* Anidamiento */
+/* ----------------------------------PAGINA "ARTÍCULOS"---------------------------------------- */
+main {
+  padding: 80px;
+
+  #filtro-tabla {
+    width: 1420px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ 
+    .p-2.flex-art {
+      margin-right: 110px;
+      .filtros.a{
+        width: 550px;
+        height: 37px;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1.5px solid lightgrey;
+        outline: none;
+        transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: 0px 0px 20px -18px;
+      }
+      .filtros.a:hover,
+      .filtros.a:focus {
+        box-shadow: 0 0 0 2px #dadada;
+        border: 2px solid grey;
+  }
+    }
+
+    .filtros.b {
+      height: 37px;
+      width: 250px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1.5px solid lightgrey;
+      outline: none;
+      transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+      box-shadow: 0px 0px 20px -18px;
+    }
+    .filtros.b:hover,
+    .filtros.b:focus {
+      box-shadow: 0 0 0 2px #dadada;
+      border: 2px solid grey;
+    }
+    
+    .d-flex.gap-2.botones-superiores {
+      padding: 8px;
+      .btn.btn-primary.a {
+        width: 110px;
+        height: 37px;
+      }
+      .btn.btn-success.a {
+        width: 110px;
+        height: 37px;
+        margin-left: 0px;
+      }
+      .btn.btn-success.code {
+        color:#272727;
+        background-color: #fdfdfd;
+        border-color: #d6b007;
+      }
+      .btn.btn-success.code:hover{
+        color: #272727;
+        background-color: #d6b007;
+        border-color: #272727;
+      }
+    }  
+    .menu.a {
+      width: 180px;
+      height: 38px;
+      font-size: 13px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1.5px solid lightgrey;
+      outline: none;
+      transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+      box-shadow: 0px 0px 20px -18px;
+    }
+    .menu.b {
+      width: 180px;
+      height: 38px;
+      font-size: 13px;
+      margin-right: 140px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1.5px solid lightgrey;
+      outline: none;
+      transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+      box-shadow: 0px 0px 20px -18px;
+    }
+
+    .btn.btn-link {
+      color: #38485c;
+    }
+    .btn.btn-link:hover {
+      font-size: bold;
+      color: rgb(8, 135, 253);
+    }
+  } 
+  .pagination {
+    padding: 10px;
+    justify-content: center;
+    position:relative
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+

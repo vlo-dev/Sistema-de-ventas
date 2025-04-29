@@ -1,0 +1,146 @@
+
+/* _responsive.scss */
+
+/* BREAKPOINTS */
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-custom: 800px;
+$breakpoint-sm: 490px;
+
+/* MIXINS */
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == custom {
+    @media (max-width: $breakpoint-custom) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+}
+
+
+/* NUEVA VENTA ---------------------------- */
+
+@include respond-to(md) {
+  #main-registrar .registro-de-clientes {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  #main-registrar .registro-de-clientes > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #main-registrar .table-responsive {
+    overflow-x: auto;
+  }
+
+  #main-registrar .registrar-venta {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  #main-registrar .registrar-venta .button-confirmar,
+  #main-registrar .registrar-venta .button-guardar {
+    width: 100%;
+    margin: 0;
+  }
+
+  #main-registrar .registrar-venta .text,
+  #main-registrar .registrar-venta .div-wrapper {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* VENTAS ---------------------------- */
+
+#main-ventas {
+  @include respond-to(lg) {
+    .datos {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .form-item {
+      width: 100%;
+      max-width: 450px;
+    }
+    .form-item.b,
+    .form-item.c {
+      max-width: 200px;
+      width: 100%;
+      margin-right: 0;
+    }
+    .btn.btn-primary,
+    .btn.btn-success {
+      width: 100%;
+    }
+  }
+
+  @include respond-to(custom) {
+    justify-content: start;
+    margin-left: -40px;
+
+    .datos {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .form-item {
+      width: 100%;
+      max-width: none;
+    }
+
+    .form-item.b,
+    .form-item.c {
+      width: 100%;
+    }
+
+    .btn.btn-primary,
+    .btn.btn-success {
+      width: 100%;
+    }
+  }
+
+  @include respond-to(sm) {
+    .datos {
+      row-gap: 10px;
+      justify-content: start;
+    }
+
+    .form-item {
+      height: 35px;
+      font-size: 14px;
+    }
+
+    .form-item.b,
+    .form-item.c {
+      font-size: 12px;
+    }
+
+    .btn.btn-primary,
+    .btn.btn-success {
+      height: 35px;
+      font-size: 14px;
+    }
+
+    .btn.btn-primary {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+

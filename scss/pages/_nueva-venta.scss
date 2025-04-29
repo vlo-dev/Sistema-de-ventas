@@ -1,0 +1,401 @@
+
+
+/* Anidamiento */
+/* ----------------------------------PAGINA "NUEVA VENTA"---------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+  
+.registro-de-clientes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 794px;
+  align-items: flex-end;
+  gap: 20px 23px;
+  padding: 21px 34px;
+  background-color: #d6dadf;
+  border-radius: 24px;
+  }
+
+  .registro-de-clientes .buscador-clientes {
+      display: flex;
+      flex-wrap: wrap;
+      height: 27px;
+      width: 575px;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 8px;
+      background-color: #ffffff;
+      border-radius: 8px;
+  }
+      .buscador-clientes .icon-text {
+      display: flex;
+      flex-wrap: wrap;
+      height: 20px;
+      gap: 4px;
+      flex: 1 0 0;
+      align-items: center;
+      align-content: center;
+      border-radius: 8px;
+      }
+      .buscador-clientes .icon-set {
+      display: inline-flex;
+      justify-content: center;
+      flex: 0 0 auto;
+      align-items: center;
+      border-radius: 8px;
+      }
+      .buscador-clientes .search {
+      width: 16px;
+      height: 16px;
+      }
+      .buscador-clientes .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      flex: 1;
+      flex-grow: 1;
+      border-radius: 8px;
+      }
+      .buscador-clientes .text-wrapper {
+      align-self: stretch;
+      margin-top: -1.00px;
+      color: #1c1c1c;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 24px;
+      }
+
+
+  .registro-de-clientes .tipo-de-pago {
+      display: flex;
+      width: 127px;
+      align-items: center;
+      gap: 22px;
+      padding: 2px 14px;
+      background-color: #ffffff;
+      border-radius: 8px;
+  }
+      .tipo-de-pago .text {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      flex: 0 0 auto;
+      border-radius: 8px;
+      }
+      .tipo-de-pago .text-wrapper {
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-weight: 400;
+      color: #1c1c1c;
+      font-size: 13px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 24px;
+      }
+      .tipo-de-pago .icon-set {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 4px;
+      flex: 1;
+      flex-grow: 1;
+      margin-right: -13.00px;
+      border-radius: 8px;
+      height: 20px;
+      }
+      .tipo-de-pago .arrow-line-down {
+      width: 20px;
+      height: 20px;
+      margin-left: -19.00px;
+      }
+
+
+  .registro-de-clientes .buscador-productos {
+      display: flex;
+      flex-wrap: wrap;
+      height: 27px;
+      width: 438px;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 8px;
+      background-color: #ffffff;
+      border-radius: 8px;
+  }    
+      .buscador-productos .icon-text {
+      display: flex;
+      flex-wrap: wrap;
+      height: 20px;
+      gap: 4px;
+      flex: 1;
+      flex-grow: 1;
+      align-items: center;
+      border-radius: 8px;
+      }
+      .buscador-productos .icon-set {
+      display: inline-flex;
+      justify-content: center;
+      flex: 0 0 auto;
+      align-items: center;
+      border-radius: 8px;
+      }
+      .buscador-productos .search {
+      width: 16px;
+      height: 16px;
+      }
+      .buscador-productos .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      flex: 1;
+      flex-grow: 1;
+      border-radius: 8px;
+      }
+      .buscador-productos .text-wrapper {
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-weight: 400;
+      color: #1c1c1c;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 24px;
+      }
+
+  .registro-de-clientes .cantidad {
+      display: flex;
+      flex-wrap: wrap;
+      height: 27px;;
+      width: 121px;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 8px;
+      background-color: #ffffff;
+      border-radius: 8px;
+  }
+      .cantidad .icon-text {
+      display: flex;
+      height: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
+      flex-grow: 1;
+      border-radius: 8px;
+      }
+      .cantidad .icon-set {
+      width: 20px;
+      height: 20px;
+      border-radius: 8px;
+      }
+      .cantidad .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      flex: 1;
+      flex-grow: 1;
+      border-radius: 8px;
+      }
+      .cantidad .text-wrapper {
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-weight: 400;
+      color: #1c1c1c;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 20px;
+      }
+
+  .registro-de-clientes .boton-agregar {
+      flex-wrap: wrap;
+      width: 121px;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 8px;
+      background-color: #0d99ff;
+      display: flex;
+      border-radius: 8px;
+  }
+      .boton-agregar .icon-text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
+      flex-grow: 1;
+      border-radius: 8px;
+      }
+      .boton-agregar .text {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      flex: 1;
+      flex-grow: 1;
+      display: var(--show-text-show-text, flex);
+      border-radius: var(--corner-radius-8-duplicate);
+      }
+      .boton-agregar .text-wrapper {
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: "Inter-Bold", Helvetica;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 20px;
+      }
+
+/*tablas*/
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  min-width: 800px; 
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  white-space: nowrap; 
+}
+
+
+
+.registrar-venta {
+  display: flex;
+  flex-wrap: wrap;
+  width: 599px;
+  height: 59px;
+  align-items: center;
+  gap: 20px 23px;
+  padding: 21px 34px;
+  position: relative;
+  background-color: #f3f5f7;
+  border-radius: 24px;
+  }
+  .registrar-venta .button-confirmar {
+  display: flex;
+  width: 133px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px 16px 24px;
+  position: relative;
+  margin-top: -11.50px;
+  margin-bottom: -11.50px;
+  border-radius: 16px;
+  background-color: #17a022;
+  }  
+      .registrar-venta .text {
+          display: inline-flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          position: relative;
+          flex: 0 0 auto;
+          margin-top: -8.00px;
+          margin-bottom: -8.00px;
+          border-radius: 8px;
+      }
+      .registrar-venta .text-wrapper {
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-weight: 700;
+      color: #ffff;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 24px;
+      } 
+
+
+  .registrar-venta .button-guardar {
+      background-color: #0d99ff;
+      display: flex;
+      width: 133px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 24px 16px 24px;
+      position: relative;
+      margin-top: -11.50px;
+      margin-bottom: -11.50px;
+      border-radius: 16px;
+  }       
+      .registrar-venta .div {
+          position: relative;
+          align-self: stretch;
+          margin-top: -1.00px;
+          font-weight: 700;
+          color: #ffffff;
+          font-size: 14px;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: 24px;
+      }
+  
+  
+  .registrar-venta .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex: 0 0 auto;
+  margin-top: -3.50px;
+  margin-bottom: -3.50px;
+  }
+      .registrar-venta .clean {
+          
+          width: 24px;
+          height: 24px;
+      }
+      .registrar-venta .group {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 2px;
+          left: 2px;
+      }
+      .registrar-venta .div-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      flex: 0 0 auto;
+      border-radius: 8px;
+      }
+      .registrar-venta .text-wrapper-2 {
+      
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-weight: 700;
+      color: #3a3a3a;
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: 24px;
+      text-decoration: underline;
+      }
+      .registrar-venta .fluent-delete {
+      position: relative;
+      width: 16px;
+      height: 16px;
+      }
+      
+      
+      
+     
+

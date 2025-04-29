@@ -11,39 +11,18 @@
     <link rel="icon" type="image/png" href="../images/vlo.png"> 
     <!--Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <!--ANIMACIONES AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <style>
         * {
             font-family: 'Inter', sans-serif;
-            
-        }
-
-        .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px;
-    background: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    z-index: 1000;
-  }
-  
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 999;
-  }
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+        
     </style>
     <title>Artículos</title>
     <!--CSS-->
@@ -58,22 +37,17 @@
   <!-- HEADER CON NAVBAR -->
   
   <header id="header">
-    <div class="header-right">
-      <a href="../pages/login.html" class="header-link"><i class="fas fa-sign-out-alt"></i>CERRAR SESIÓN</a>
-      
-      <div class="nav-circles">
-        <div class="circle"><i class="fas fa-bell"></i></div>
-        <div class="circle"><i class="fas fa-user"></i></div>
-        <div class="circle"><i class="fas fa-cog"></i></div>
-      </div>
-    </div>
     <nav class="navbar">
-      <div class="nav-links">
-        
-        
-
+      <div class="logo">
         <a href="../index.html" class="nav-link-home"><i class="fas fa-home"></i> HOME</a>
-          
+      </div>
+  
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </label>
+  
+      <div class="nav-links" id="nav-links">
         <a href="#" class="nav-link">Repartos</a>
         <a href="../pages/articulos.html" class="nav-link">Artículos</a>
         <a href="#" class="nav-link">Caja</a>
@@ -83,10 +57,17 @@
         <a href="#" class="nav-link">Paramétricas</a>
         <a href="#" class="nav-link">Prestamos</a>
         <a href="#" class="nav-link">Proveedores</a>
-        <a href="../pages/ventas.html" class="nav-link button">Ventas</a>
+        <a href="../pages/ventas.html" class="nav-link">Ventas</a>
+        <a href="../pages/login.html" class="header-link logout-link">
+          <i class="fas fa-sign-out-alt"></i> CERRAR SESIÓN
+        </a>
+        <div class="nav-circles">
+          <div class="circle"><i class="fas fa-bell"></i></div>
+          <div class="circle"><i class="fas fa-user"></i></div>
+          <div class="circle"><i class="fas fa-cog"></i></div>
+        </div>
       </div>
     </nav>
-    
   </header>
 
   
@@ -102,16 +83,18 @@
       
       <!-- CAMPOS DE BÚSQUEDA -->
       <div class="d-flex">
-        <div class="p-2 flex-art">
-          <div class="col-auto a">
-            <input class="filtros a" type="search" placeholder="Artículo...">
-          </div>
-        </div>
-        <div class="p-2 flex-code">
-          <div class="col-auto a">
-            <input class="filtros b" type="search" placeholder="Código...">
-          </div>
-        </div>
+
+                  <div class="p-2 flex-art">
+                    <div class="col-auto a">
+                      <input class="filtros a" type="search" placeholder="Artículo...">
+                    </div>
+                  </div>
+
+                  <div class="p-2 flex-code">
+                    <div class="col-auto a">
+                      <input class="filtros b" type="search" placeholder="Código...">
+                    </div>
+                  </div>
       </div>
   
       <!-- BOTONES SUPERIORES A LA DERECHA -->
@@ -126,6 +109,7 @@
           <button type="button" class="btn btn-success code">Importar</button>
         </div>
       </div>
+
     </div>
   
     <!-- BOTONES Y MENÚ -->
@@ -154,7 +138,7 @@
           </div>
         </div>
       </div>
-  
+                
       <!-- BOTONES INFERIORES A LA DERECHA -->
       <div class="d-flex gap-3 align-items-center">
         <div class="col-auto d">
@@ -326,6 +310,17 @@
 
 
   </footer>
+
+
+  
+  <!--BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <!--ANIMACIONES AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>   
