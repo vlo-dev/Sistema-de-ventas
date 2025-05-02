@@ -4,14 +4,14 @@
 @use './pages/articulos';
 @use './pages/ventas';
 @use './pages/nueva-venta';
-
 @use './responsive';
 
 
 
 
+$magna-negro:#1d1d1d;
+$primary-color: #d6d6d6;
 
-$primary-color: #f0f0f0;
 
 * {
     font-family: 'Inter', sans-serif;
@@ -28,8 +28,8 @@ background-color: $primary-color;
 
 /* HEADER Y NAVBAR -----------------------------------------------------------------------*/
 header {
-padding: 10px 20px;
-background-color: #fcfcfc;
+padding: 5px 20px;
+background-color: #1d1d1d;
 box-shadow: 0 5px 10px rgba(7, 7, 7, 0.39);
 }
 
@@ -40,8 +40,14 @@ align-items: center;
 position: relative;
 }
 
+.logo {
+  display: flex;
+  justify-content: start;
+  width: 1020px;
+ 
+}
 .logo a {
-color: #353535;
+color: #ffffff;
 text-decoration: none;
 font-weight: bold;
 font-size: 18px;
@@ -50,12 +56,12 @@ font-size: 18px;
 .nav-links {
 display: flex;
 gap: 20px;
-align-items: center;
+align-items: start;
 }
 
 .nav-link,
 .header-link {
-color: #646363;
+color: #c2c1c1;
 text-decoration: none;
 font-weight: bold;
 font-size: 14px;
@@ -69,8 +75,12 @@ color: #ce1c1c;
 
 .nav-circles {
 display: flex;
+width: 350px;
+justify-content: end;
+padding: 8px 0px;
 gap: 10px;
 }
+
 
 .circle {
 width: 30px;
@@ -245,38 +255,89 @@ footer {
 
 
 
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        background-color: #fcfcfc;
-        border-radius: 10px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        flex-direction: column;
-        padding: 20px;
-        width: 200px;
-    }
+
+/* menu desktop */
+@media (min-width: 1400px) {
+  .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 1470px;
+      border-radius: 10px;
+      background-color: $magna-negro;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      flex-direction: column;
+      padding: 20px;
+      width: 200px;
+      height:100dvh;
+  }
+.nav-links.active {
+  display: flex;
+  
+}
+.nav-circles {
+  display: flex;
+  width: 550px;
+  justify-content: end;
+  padding: 6px 0px;
+  gap: 10px;
+  }
+ 
+  .menu-toggle {
+    display: block;
+    color: #daba07;
+}
+/* Mostrar el menú cuando el checkbox está checked */
+.menu-checkbox:checked + .menu-toggle + .nav-links {
+  display: flex;
+  font-style: italic;
+  }
+}
+/* Responsive mobile */
+@media (max-width: 508px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    top: 60px;
+    right: 210px;
+    background-color: $magna-negro;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    padding: 20px;
+    width: 200px;
+    height:60dvh;
+}
+
+.logo{
+  width: 80px;
+}
+.nav-links.active {
+    display: flex;
     
-    .nav-links.active {
-        display: flex;
+}
+  .nav-circles {
+    display: flex;
+    width: 250px;
+    justify-content: end;
+    padding: 6px 0px;
+    gap: 10px;
     }
     
     .menu-toggle {
-        display: block;
-        
-    }
-    /* Mostrar el menú cuando el checkbox está checked */
-    .menu-checkbox:checked + .menu-toggle + .nav-links {
-        display: flex;
-    }
-    }
+      display: block;
+      color: #daba07;
+  }
+  /* Mostrar el menú cuando el checkbox está checked */
+  .menu-checkbox:checked + .menu-toggle + .nav-links {
+    display: flex;
+    font-style: italic;
+    
+}
+}
 
-
-
-
+/* reaponsive footer*/
 
 @media (max-width: 768px) {
     footer .footer-grid {
