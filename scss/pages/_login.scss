@@ -1,5 +1,9 @@
 
-
+/* colores de la marca */
+$magna-negro:#1d1d1d;
+$magna-amarillo:#da9708;
+$magna-rojo:#ce1c1c;
+$background: #d6d6d6;
 
 
 /* Anidamiento */
@@ -164,7 +168,7 @@
     margin-top:30px;
     margin-left:  auto;
     margin-right: auto;
-    background-color: #da9708;
+    background-color: $magna-amarillo;
     align-items: center;
     gap: 10px;
     justify-content: center;

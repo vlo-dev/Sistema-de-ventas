@@ -9,10 +9,14 @@
 
 
 
+
+/* colores de la marca */
 $magna-negro:#1d1d1d;
-$primary-color: #d6d6d6;
+$magna-amarillo:#da9708;
+$magna-rojo:#ce1c1c;
+$background: #EDEAEA;
 
-
+/* estilos generales */
 * {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -20,7 +24,7 @@ $primary-color: #d6d6d6;
     box-sizing: border-box;
   }
 body {
-background-color: $primary-color;
+background-color: $background;
 }
 
 
@@ -29,13 +33,14 @@ background-color: $primary-color;
 /* HEADER Y NAVBAR -----------------------------------------------------------------------*/
 header {
 padding: 5px 20px;
-background-color: #1d1d1d;
+background-color: $magna-negro;
 box-shadow: 0 5px 10px rgba(7, 7, 7, 0.39);
 }
 
 .navbar {
+  
 display: flex;
-justify-content: space-between;
+justify-content: start;
 align-items: center;
 position: relative;
 }
@@ -43,6 +48,7 @@ position: relative;
 .logo {
   display: flex;
   justify-content: start;
+  margin-left: 10px;
   width: 1020px;
  
 }
@@ -71,6 +77,9 @@ transition: color 0.3s;
 .nav-link:hover,
 .header-link:hover {
 color: #ce1c1c;
+font-weight: bold;
+font-size: 14px;
+transition: color 0.9s;
 }
 
 .nav-circles {

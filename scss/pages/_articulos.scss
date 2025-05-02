@@ -15,13 +15,18 @@
 
 .pagination {
   justify-content: center;
-  height: 100px;
-  margin-left: 90px;
+  height: 80px;
+  margin: 0px 0px 100px 90px;
     
 }
 .page-link {
   background-color: rgb(212, 212, 212);
 }
+
+
+
+
+
 .articulos {
   position: relative;
   Z-index: -1;
@@ -29,7 +34,7 @@
   margin: 0px 250px 0px 300px ;
   justify-content: center;
   width: 1011px;
-  height: 828px;
+  height: 688px;
 }
 
 .articulos .filtro-de-articulos { /*------------contenedor con color*/
@@ -38,9 +43,11 @@
   height: 137px;
   top: 0;
   left: 0;
-  background-color: #8b8b8b; 
-  box-shadow: 0 5px 10px rgba(7, 7, 7, 0.575);
+  background-color: #5555552b; 
+  box-shadow: 0 5px 10px rgba(122, 122, 122, 0.596);
   border-radius: 24px;
+  border: 1px solid;
+  border-color: #c7c7c7;
 }
 
 .articulos .contenedor-de {
@@ -508,10 +515,10 @@
 .articulos .detalle-de-articulos { /*------------cuadro contenedor con color*/
   position: absolute;
   width: 1004px;
-  height: 589px;
+  height: 424px;
   top: 210px;
   left: 0;
-  background-color: #ddddddb6;
+  background-color: #dddddd57;
   border-radius: 24px;
 }
 
