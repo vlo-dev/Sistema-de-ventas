@@ -23,124 +23,92 @@ $breakpoint-sm: 490px;
 
 /* NUEVA VENTA ---------------------------- */
 
-@include respond-to(md) {
-  #main-registrar .registro-de-clientes {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    padding: 16px;
-    gap: 12px;
-  }
-
-  #main-registrar .registro-de-clientes > div {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #main-registrar .table-responsive {
-    overflow-x: auto;
-  }
-
-  #main-registrar .registrar-venta {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 16px;
-    gap: 12px;
-  }
-
-  #main-registrar .registrar-venta .button-confirmar,
-  #main-registrar .registrar-venta .button-guardar {
-    width: 100%;
-    margin: 0;
-  }
-
-  #main-registrar .registrar-venta .text,
-  #main-registrar .registrar-venta .div-wrapper {
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-}
 
 /* VENTAS ---------------------------- */
+@media (max-width: 1560px) {
 
-#main-ventas {
-  @include respond-to(lg) {
-    .datos {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+  #main-ventas .main-de-ventas {
+    
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+    overflow-y: auto;
+    /* SIDEBAR FILTER */
+    .sidebar-filter {
+      width: 95%;
+      height: auto;
+      padding: 15px;
+      
     }
-    .form-item {
-      width: 100%;
-      max-width: 450px;
+    .text-4 {
+      width:  85%;
     }
-    .form-item.b,
-    .form-item.c {
-      max-width: 200px;
+    .form-select {
       width: 100%;
+    }
+    
+    .text-wrapper-5 {
+      width: 100%;
+    }
+    /* REGISTRO VENTAS */
+    .registro-ventas {
+      width: 95%;
+      height: auto;
+      margin-left: 0;
+     
+    }
+    
+    .historico-ventas {
+      width: 100%;
+      left: 0;
+      padding: 10px;
+    }
+    
+    .hit-vent {
+      width:60%;
+      padding: 2px 10px;
+    }
+    
+    .hist-rico-de-ventas {
+      margin-left: 0;
       margin-right: 0;
+      font-size: 24px;      
+      
     }
-    .btn.btn-primary,
-    .btn.btn-success {
+    
+    .span {
+      font-size: 24px;
+    }
+    
+    .bton-exp {
+      width: 140%;
+      left: 0;
+      position: relative;
+    }
+    
+    .bton-accion {
+      position: relative;
+      left: 0;
       width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    
+    /* TABLA DE VENTAS */
+    .detalle-de-articulos {
+      width: 95%;
+      left: 0;
+      overflow-x: auto;
+      height: auto;
+    }
+    
+    .campos-de-detalles {
+      width: 100%;
+      left: 0;
+      min-width: 600px; /* Para permitir scroll horizontal */
     }
   }
-
-  @include respond-to(custom) {
-    justify-content: start;
-    margin-left: -40px;
-
-    .datos {
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .form-item {
-      width: 100%;
-      max-width: none;
-    }
-
-    .form-item.b,
-    .form-item.c {
-      width: 100%;
-    }
-
-    .btn.btn-primary,
-    .btn.btn-success {
-      width: 100%;
-    }
-  }
-
-  @include respond-to(sm) {
-    .datos {
-      row-gap: 10px;
-      justify-content: start;
-    }
-
-    .form-item {
-      height: 35px;
-      font-size: 14px;
-    }
-
-    .form-item.b,
-    .form-item.c {
-      font-size: 12px;
-    }
-
-    .btn.btn-primary,
-    .btn.btn-success {
-      height: 35px;
-      font-size: 14px;
-    }
-
-    .btn.btn-primary {
-      margin-left: 10px;
-    }
-  }
+  
 }
-
-
 

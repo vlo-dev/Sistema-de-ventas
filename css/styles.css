@@ -1424,42 +1424,6 @@
   height: 18.81px;
 }
 
-.main-de-ventas .text {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 7.57px;
-}
-
-.main-de-ventas .text-wrapper-2 {
-  position: relative;
-  width: 108px;
-  margin-top: -0.94px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1d1d1d;
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-}
-
-.main-de-ventas .text-wrapper-3 {
-  position: relative;
-  width: 104px;
-  margin-top: -0.94px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1d1d1d;
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-}
-
 .main-de-ventas .img-wrapper {
   display: inline-flex;
   justify-content: center;
@@ -1469,16 +1433,7 @@
   position: relative;
 }
 
-.main-de-ventas .text-2 {
-  display: flex;
-  flex-direction: column;
-  width: 116px;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  border-radius: 7.57px;
-}
-
+/*-----MENU SELECT---------*/
 .main-de-ventas .e-d {
   display: flex;
   flex-wrap: wrap;
@@ -1489,29 +1444,20 @@
   border-radius: 7.57px;
 }
 
-.main-de-ventas .text-3 {
-  display: flex;
-  flex-direction: column;
-  width: 123px;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  border-radius: 7.57px;
-}
-
-.main-de-ventas .text-wrapper-4 {
-  position: relative;
-  width: 71px;
-  margin-top: -0.94px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1d1d1d;
+.main-de-ventas .form-select {
+  width: 130px;
+  height: 30px;
   font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
+  color: #1d1d1d;
 }
 
+.main-de-ventas .form-select:hover,
+.main-de-ventas .form-select:focus {
+  box-shadow: 0 0 0 2px #dadada;
+  border: 2px solid rgb(238, 184, 37);
+}
+
+/*-----INPUTS---------*/
 .main-de-ventas .div-2 {
   display: flex;
   flex-wrap: wrap;
@@ -1523,30 +1469,33 @@
   border-radius: 7.57px;
 }
 
-.main-de-ventas .text-4 { /*-----fondo filtro---------*/
+.main-de-ventas .text-4 {
   display: flex;
   flex-direction: column;
-  width: 125px;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 7.57px;
-  border: 0.5px solid;
-  border-color: #acacac;
+  width: 12px;
 }
 
 .main-de-ventas .text-wrapper-5 {
   position: relative;
-  width: 82px;
+  width: 122px;
   margin-top: -0.5px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
+  font-weight: 600;
   color: #1d1d1d;
-  font-size: 13.2px;
+  font-size: 14.2px;
   text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
+  background-color: #ffffff;
+  border-radius: 7.57px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+/*camp style*/
+.main-de-ventas .text-wrapper-5:hover,
+.main-de-ventas .text-wrapper-5:focus {
+  box-shadow: 0 0 0 2px #dadada;
+  border: 2px solid rgb(238, 184, 37);
 }
 
 .main-de-ventas .registro-ventas {
@@ -3072,108 +3021,78 @@
 /* BREAKPOINTS */
 /* MIXINS */
 /* NUEVA VENTA ---------------------------- */
-@media (max-width: 768px) {
-  #main-registrar .registro-de-clientes {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    padding: 16px;
-    gap: 12px;
-  }
-  #main-registrar .registro-de-clientes > div {
-    width: 100%;
-    max-width: 100%;
-  }
-  #main-registrar .table-responsive {
-    overflow-x: auto;
-  }
-  #main-registrar .registrar-venta {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 16px;
-    gap: 12px;
-  }
-  #main-registrar .registrar-venta .button-confirmar,
-  #main-registrar .registrar-venta .button-guardar {
-    width: 100%;
-    margin: 0;
-  }
-  #main-registrar .registrar-venta .text,
-  #main-registrar .registrar-venta .div-wrapper {
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-}
 /* VENTAS ---------------------------- */
-@media (max-width: 1024px) {
-  #main-ventas .datos {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  #main-ventas .form-item {
+@media (max-width: 1560px) {
+  #main-ventas .main-de-ventas {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
     width: 100%;
-    max-width: 450px;
+    overflow-y: auto;
+    /* SIDEBAR FILTER */
+    /* REGISTRO VENTAS */
+    /* TABLA DE VENTAS */
   }
-  #main-ventas .form-item.b,
-  #main-ventas .form-item.c {
-    max-width: 200px;
+  #main-ventas .main-de-ventas .sidebar-filter {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+  }
+  #main-ventas .main-de-ventas .text-4 {
+    width: 85%;
+  }
+  #main-ventas .main-de-ventas .form-select {
     width: 100%;
+  }
+  #main-ventas .main-de-ventas .text-wrapper-5 {
+    width: 100%;
+  }
+  #main-ventas .main-de-ventas .registro-ventas {
+    width: 95%;
+    height: auto;
+    margin-left: 0;
+  }
+  #main-ventas .main-de-ventas .historico-ventas {
+    width: 100%;
+    left: 0;
+    padding: 10px;
+  }
+  #main-ventas .main-de-ventas .hit-vent {
+    width: 60%;
+    padding: 2px 10px;
+  }
+  #main-ventas .main-de-ventas .hist-rico-de-ventas {
+    margin-left: 0;
     margin-right: 0;
+    font-size: 24px;
   }
-  #main-ventas .btn.btn-primary,
-  #main-ventas .btn.btn-success {
+  #main-ventas .main-de-ventas .span {
+    font-size: 24px;
+  }
+  #main-ventas .main-de-ventas .bton-exp {
+    width: 140%;
+    left: 0;
+    position: relative;
+  }
+  #main-ventas .main-de-ventas .bton-accion {
+    position: relative;
+    left: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #main-ventas .main-de-ventas .detalle-de-articulos {
+    width: 95%;
+    left: 0;
+    overflow-x: auto;
+    height: auto;
+  }
+  #main-ventas .main-de-ventas .campos-de-detalles {
+    width: 100%;
+    left: 0;
+    min-width: 600px; /* Para permitir scroll horizontal */
   }
 }
-@media (max-width: 800px) {
-  #main-ventas {
-    justify-content: start;
-    margin-left: -40px;
-  }
-  #main-ventas .datos {
-    flex-direction: row;
-    align-items: center;
-  }
-  #main-ventas .form-item {
-    width: 100%;
-    max-width: none;
-  }
-  #main-ventas .form-item.b,
-  #main-ventas .form-item.c {
-    width: 100%;
-  }
-  #main-ventas .btn.btn-primary,
-  #main-ventas .btn.btn-success {
-    width: 100%;
-  }
-}
-@media (max-width: 490px) {
-  #main-ventas .datos {
-    row-gap: 10px;
-    justify-content: start;
-  }
-  #main-ventas .form-item {
-    height: 35px;
-    font-size: 14px;
-  }
-  #main-ventas .form-item.b,
-  #main-ventas .form-item.c {
-    font-size: 12px;
-  }
-  #main-ventas .btn.btn-primary,
-  #main-ventas .btn.btn-success {
-    height: 35px;
-    font-size: 14px;
-  }
-  #main-ventas .btn.btn-primary {
-    margin-left: 10px;
-  }
-}
-
 /* colores de la marca */
 /* estilos generales */
 * {
@@ -3190,6 +3109,8 @@ body {
 /* Anidamiento */
 /* HEADER Y NAVBAR -----------------------------------------------------------------------*/
 header {
+  position: relative;
+  Z-index: 1;
   padding: 5px 20px;
   background-color: #1d1d1d;
   box-shadow: 0 5px 10px rgba(7, 7, 7, 0.39);
@@ -3276,6 +3197,8 @@ header {
 
 /* FOOTER-------------------------------------------------------------------------------- */
 footer {
+  position: relative;
+  Z-index: 1;
   background-color: #ffffff;
   padding: 48px 16px;
   margin-top: auto;

@@ -111,43 +111,7 @@
     width: 18.81px;
     height: 18.81px;
   }
-  
-  .main-de-ventas .text {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    flex: 0 0 auto;
-    border-radius: 7.57px;
-  }
-  
-  .main-de-ventas .text-wrapper-2 {
-    position: relative;
-    width: 108px;
-    margin-top: -0.94px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #1d1d1d;;
-    font-size: 13.2px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 18.8px;
-  }
-  
-  .main-de-ventas .text-wrapper-3 {
-    position: relative;
-    width: 104px;
-    margin-top: -0.94px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color:#1d1d1d;;
-    font-size: 13.2px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 18.8px;
-  }
-  
+
   .main-de-ventas .img-wrapper {
     display: inline-flex;
     justify-content: center;
@@ -157,16 +121,9 @@
     position: relative;
   }
   
-  .main-de-ventas .text-2 {
-    display: flex;
-    flex-direction: column;
-    width: 116px;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    border-radius: 7.57px;
-  }
   
+
+  /*-----MENU SELECT---------*/
   .main-de-ventas .e-d {
     display: flex;
     flex-wrap: wrap;
@@ -176,30 +133,21 @@
     position: relative;
     border-radius: 7.57px;
   }
-  
-  .main-de-ventas .text-3 {
-    display: flex;
-    flex-direction: column;
-    width: 123px;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    border-radius: 7.57px;
-  }
-  
-  .main-de-ventas .text-wrapper-4 {
-    position: relative;
-    width: 71px;
-    margin-top: -0.94px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #1d1d1d;;
+
+  .main-de-ventas .form-select { 
+    width: 130px;
+    height: 30px;
     font-size: 13.2px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 18.8px;
+    color: #1d1d1d;
   }
   
+.main-de-ventas .form-select:hover,
+.main-de-ventas .form-select:focus {
+  box-shadow: 0 0 0 2px #dadada;
+  border: 2px solid rgb(238, 184, 37);
+}
+
+  /*-----INPUTS---------*/
   .main-de-ventas .div-2 {
     display: flex;
     flex-wrap: wrap;
@@ -211,32 +159,40 @@
     border-radius: 7.57px;
   }
   
-  .main-de-ventas .text-4 { /*-----fondo filtro---------*/
+  .main-de-ventas .text-4 { 
     display: flex;
     flex-direction: column;
-    width: 125px;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 7.57px;
-    border: 0.5px solid;
-    border-color: #acacac;
+    width: 12px;
+    
   }
   
   .main-de-ventas .text-wrapper-5 {
     position: relative;
-    width: 82px;
+    width: 122px;
     margin-top: -0.50px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
+    font-weight: 600;
     color: #1d1d1d;;
-    font-size: 13.2px;
+    font-size: 14.2px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: 18.8px;
+    background-color: #ffffff;
+    border-radius: 7.57px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+  /*camp style*/
+  .main-de-ventas .text-wrapper-5:hover,
+  .main-de-ventas .text-wrapper-5:focus {
+    box-shadow: 0 0 0 2px #dadada;
+    border: 2px solid rgb(238, 184, 37);
   }
   
+
+
+
+
+
   .main-de-ventas .registro-ventas {
     position: relative;
     width: 1086px;
