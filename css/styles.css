@@ -2042,985 +2042,212 @@
 /* Anidamiento */
 /* ----------------------------------PAGINA "NUEVA VENTA"---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 #nva-venta {
-  width: 1511px;
-  margin: 0px;
-  justify-content: center;
-  padding-top: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-left: 5px;
 }
 
-.nueva-venta {
-  position: relative;
-  Z-index: -1;
+.search-container {
+  background-color: #d3d3d3;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+input, select, button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+input[type=text] {
+  flex: 1;
+}
+
+.client-search {
+  flex: 2;
+}
+
+.quantity-input {
+  width: 100px;
+}
+
+.product-search {
+  flex: 3;
+}
+
+.add-button {
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.divider {
+  height: 6px;
+  background-color: #e6c700;
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px 0 20px 0;
+}
+
+.table-container {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  padding: 30px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+td {
+  padding: 8px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.status-active {
+  color: green;
+}
+
+.action-buttons {
+  margin-top: 60px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.confirm-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
   padding: 10px;
-  margin: 0px 250px 0px 300px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 1011px;
-  height: 748px;
-  align-items: flex-start;
-  gap: 18px;
-}
-
-/*filtros*/
-.nueva-venta .filtro-de-articulos { /*------------contenedor con color*/
-  display: flex;
-  flex-direction: column;
-  width: 1004px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 21px 38px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: rgba(85, 85, 85, 0.168627451);
-  box-shadow: 0 5px 10px rgba(122, 122, 122, 0.596);
-  border-radius: 24px;
-  border: 1px solid;
-  border-color: #c7c7c7;
-}
-
-.nueva-venta .contenedor-de {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 94px;
-}
-
-.nueva-venta .caract-cliente {
-  top: 0;
-  position: absolute;
-  width: 911px;
-  height: 28px;
-  left: 3px;
-}
-
-.nueva-venta .buscador-cliente {
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  width: 525px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 4px 34px;
-  position: absolute;
-  top: 0;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.nueva-venta .icono-texto {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 20px;
-  border-radius: 8px;
-}
-
-.nueva-venta .icono {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 2px;
-  left: 0;
-  border-radius: 8px;
-}
-
-.nueva-venta .img {
-  position: relative;
-  width: 16px;
-  height: 16px;
-}
-
-.nueva-venta .texto {
-  display: flex;
-  flex-direction: column;
-  width: 399px;
-  height: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-wrapper {
-  align-self: stretch;
-  position: relative;
-  margin-top: -1px;
-  font-family: var(--14-regular-font-family);
-  font-weight: var(--14-regular-font-weight);
-  color: #1c1c1c;
-  font-size: var(--14-regular-font-size);
-  letter-spacing: var(--14-regular-letter-spacing);
-  line-height: var(--14-regular-line-height);
-  font-style: var(--14-regular-font-style);
-}
-
-.nueva-venta .menu-tipodepago {
-  width: 140px;
-  left: 596px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 2px;
-  position: absolute;
-  top: 0;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.nueva-venta .icon-text {
-  flex-wrap: wrap;
-  gap: 7px 7px;
-  flex: 1;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .text {
-  display: flex;
-  flex-direction: column;
-  width: 91px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .div {
-  width: 90px;
-  position: relative;
-  margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1c1c1c;
-  font-size: 13px;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
-.nueva-venta .icon-set {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .menu-tipodecliente {
-  width: 147px;
-  left: 756px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 2px;
-  position: absolute;
-  top: 0;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.nueva-venta .div-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 99px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-wrapper-2 {
-  width: 91px;
-  position: relative;
-  margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1c1c1c;
-  font-size: 13px;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
-.nueva-venta .caract-producto {
-  top: 66px;
-  position: absolute;
-  width: 911px;
-  height: 28px;
-  left: 3px;
-}
-
-.nueva-venta .bton-accion {
-  position: absolute;
-  width: 82px;
-  height: 28px;
-  top: 0;
-  left: 821px;
-}
-
-.nueva-venta .bton-agregar {
-  display: flex;
-  flex-wrap: wrap;
-  width: 82px;
-  align-items: center;
-  gap: var(--spacing-8);
-  padding: 4px 8px;
-  position: relative;
-  background-color: #0d99ff;
-  border-radius: 8px;
-}
-
-.nueva-venta .icon-text-2 {
-  flex: 1;
-  flex-grow: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-wrapper-3 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
-.nueva-venta .campo-de-busqueda {
-  position: absolute;
-  width: 696px;
-  height: 28px;
-  top: 0;
-  left: 0;
-}
-
-.nueva-venta .buscador-producto {
-  left: 171px;
-  display: flex;
-  flex-direction: column;
-  width: 525px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 4px 34px;
-  position: absolute;
-  top: 0;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-wrapper-4 {
-  width: 399px;
-  position: relative;
-  margin-top: -1px;
-  font-family: var(--14-regular-font-family);
-  font-weight: var(--14-regular-font-weight);
-  color: #1c1c1c;
-  font-size: var(--14-regular-font-size);
-  letter-spacing: var(--14-regular-letter-spacing);
-  line-height: var(--14-regular-line-height);
-  font-style: var(--14-regular-font-style);
-}
-
-.nueva-venta .cant-producto {
-  display: flex;
-  flex-wrap: wrap;
-  width: 140px;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 2px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-/*elemento divisor*/
-.nueva-venta .elem-divisor {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 50px;
-}
-
-.nueva-venta .rectangle {
-  position: relative;
-  width: 984px;
-  height: 10px;
-  top: 20px;
-  left: 10px;
-  background-color: #dabe1d;
-  border-radius: 8px;
-}
-
-/*body presupuesto*/
-.nueva-venta .detalle-de-venta { /*------------contenedor con color*/
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 22px 48px;
-  align-items: flex-start;
-  align-self: stretch;
-  flex: 0 0 auto;
-  gap: 10px;
-  background-color: rgba(221, 221, 221, 0.3411764706);
-  border-radius: 24px;
-}
-
-.nueva-venta .campos-de-detalles {
-  display: flex;
-  flex-wrap: wrap;
-  height: 279px;
-  align-items: flex-start;
-  gap: 20px 20px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-}
-
-.nueva-venta .columna-uno {
-  display: flex;
-  flex-direction: column;
-  width: 79px;
-  align-items: center;
-  gap: 9px;
-  padding: 0px 8px;
-  position: relative;
-  margin-bottom: -197px;
-}
-
-.nueva-venta .text-wrapper-5 {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 30px;
-}
-
-.nueva-venta .text-3 {
-  position: relative;
-  width: 57px;
-  height: 19px;
-  top: 5px;
-  left: 3px;
-  border-radius: 7.57px;
-  display: var(--show-text-show-text);
-}
-
-.nueva-venta .text-wrapper-6 {
-  position: absolute;
-  height: 19px;
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--themes-black-100);
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-  white-space: nowrap;
-}
-
-.nueva-venta .div-2 {
-  align-self: stretch;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 537px;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-}
-
-.nueva-venta .search {
-  display: flex;
-  flex-wrap: wrap;
-  height: 20px;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 8px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.nueva-venta .icon-text-3 {
-  width: 46px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-4 {
-  display: flex;
-  flex-direction: column;
-  width: 46px;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .div-3 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1c1c1c;
-  font-size: 11px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
-.nueva-venta .columna-dos {
-  display: flex;
-  flex-direction: column;
-  width: 63px;
-  align-items: center;
-  gap: 9px;
-  position: relative;
-  margin-bottom: -197px;
-}
-
-.nueva-venta .text-wrapper-7 {
-  position: absolute;
-  height: 19px;
-  top: 0;
-  left: 4px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--themes-black-100);
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-  white-space: nowrap;
-}
-
-.nueva-venta .columna-tres {
-  display: flex;
-  flex-direction: column;
-  width: 138px;
-  align-items: flex-start;
-  gap: 9px;
-  position: relative;
-  margin-bottom: -197px;
-}
-
-.nueva-venta .detalle-f {
-  width: 122px;
-  position: relative;
-  height: 30px;
-}
-
-.nueva-venta .text-5 {
-  position: relative;
-  height: 19px;
-  top: 5px;
-  border-radius: 7.57px;
-  display: var(--show-text-show-text);
-}
-
-.nueva-venta .text-wrapper-8 {
-  position: absolute;
-  width: 122px;
-  height: 19px;
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--themes-black-100);
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-}
-
-.nueva-venta .icon-text-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 138px;
-  height: 20px;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 8px;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.nueva-venta .icon-text-4 {
-  width: 115px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-6 {
-  display: flex;
-  flex-direction: column;
-  width: 115px;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-wrapper-9 {
-  position: relative;
-  width: 115px;
-  margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1c1c1c;
-  font-size: 11px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
-.nueva-venta .icon-text-5 {
-  width: 122px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .p {
-  width: 122px;
-  margin-right: -7px;
-  position: relative;
-  margin-top: -1px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1c1c1c;
-  font-size: 11px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
-.nueva-venta .columna-cuatro {
-  display: flex;
-  flex-direction: column;
-  width: 63px;
-  align-items: flex-start;
-  gap: 9px;
-  position: relative;
-  margin-bottom: -197px;
-}
-
-.nueva-venta .text-7 {
-  position: relative;
-  width: 53px;
-  height: 19px;
-  top: 5px;
-  left: 5px;
-  border-radius: 7.57px;
-  display: var(--show-text-show-text);
-}
-
-.nueva-venta .text-wrapper-10 {
-  position: absolute;
-  width: 53px;
-  height: 19px;
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--themes-black-100);
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-}
-
-.nueva-venta .icon-text-6 {
-  width: 49px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  margin-right: -2px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .icon-set-2 {
-  position: relative;
-  width: 6px;
-  height: 20px;
-  border-radius: 8px;
-}
-
-.nueva-venta .icon-text-7 {
-  width: 48px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  margin-right: -1px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .div-4 {
-  display: flex;
-  flex-direction: column;
-  width: 95px;
-  align-items: flex-start;
-  gap: 9px;
-  position: relative;
-  margin-bottom: -197px;
-}
-
-.nueva-venta .detalle-d {
-  width: 81px;
-  position: relative;
-  height: 30px;
-}
-
-.nueva-venta .text-wrapper-11 {
-  position: absolute;
-  width: 81px;
-  height: 19px;
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--themes-black-100);
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-}
-
-.nueva-venta .icon-text-8 {
-  width: 79px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .span {
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #1c1c1c;
-  font-size: 11px;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
-.nueva-venta .columna-seis {
-  display: flex;
-  flex-direction: column;
-  width: 81px;
-  align-items: flex-start;
-  gap: 9px;
-  position: relative;
-  margin-bottom: -197px;
-}
-
-.nueva-venta .text-8 {
-  position: relative;
-  width: 81px;
-  height: 19px;
-  top: 5px;
-  border-radius: 7.57px;
-  display: var(--show-text-show-text);
-}
-
-.nueva-venta .icon-text-9 {
-  width: 79px;
-  margin-top: -4px;
-  margin-bottom: -4px;
-  margin-right: -14px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-9 {
-  position: relative;
-  width: 89px;
-  height: 19px;
-  top: 5px;
-  left: 3px;
-  border-radius: 7.57px;
-  display: var(--show-text-show-text);
-}
-
-.nueva-venta .text-wrapper-12 {
-  position: absolute;
-  height: 19px;
-  top: 0;
-  left: -5px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--themes-black-100);
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-  white-space: nowrap;
-}
-
-.nueva-venta .detalle-a {
-  width: 70px;
-  position: relative;
-  height: 30px;
-}
-
-.nueva-venta .frame {
-  position: relative;
-  width: 53px;
-  height: 19px;
-  top: 6px;
-  left: 8px;
-}
-
-.nueva-venta .text-wrapper-13 {
-  position: absolute;
-  width: 53px;
-  height: 19px;
-  top: -1px;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--themes-black-100);
-  font-size: 13.2px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 18.8px;
-}
-
-.nueva-venta .columna-nueve {
-  width: 39px;
-  height: 576px;
-  position: relative;
-  margin-bottom: -197px;
-}
-
-.nueva-venta .campos-check {
-  width: 25px;
-  top: 39px;
-  left: 7px;
-  display: flex;
-  flex-direction: column;
-  height: 537px;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-}
-
-.nueva-venta .check {
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  height: 20px;
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 8px;
-  gap: 8px;
-}
-
-/*boton accion para registrar venta*/
-.nueva-venta .registrar-venta {
-  display: flex;
-  flex-wrap: wrap;
-  width: 599px;
-  height: 68px;
-  align-items: center;
-  gap: 51px 23px;
-  padding: 21px 34px;
-  position: relative;
-  border-radius: 24px;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.nueva-venta .button-confirmar {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(0deg, rgb(21, 156, 29) 0%, rgb(21, 156, 29) 100%);
-  display: flex;
-  flex-wrap: wrap;
-  width: 133px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 16px 24px 16px 24px;
-  position: relative;
-  margin-top: -7px;
-  margin-bottom: -7px;
-  border-radius: 16px;
-  background-color: var(--themes-white-20);
-}
-
-.nueva-venta .text-10 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  flex: 0 0 auto;
-  margin-top: -8px;
-  margin-bottom: -8px;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-11 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: var(--themes-white-100);
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
-.nueva-venta .button-guardar {
-  background-color: #0d99ff;
-  display: flex;
-  flex-wrap: wrap;
-  width: 133px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 16px 24px 16px 24px;
-  position: relative;
-  margin-top: -7px;
-  margin-bottom: -7px;
-  border-radius: 16px;
-}
-
-.nueva-venta .text-12 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
-.nueva-venta .frame-2 {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 4px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.nueva-venta .clean {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.nueva-venta .group {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 2px;
-  left: 2px;
-}
-
-.nueva-venta .text-13 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 8px;
-}
-
-.nueva-venta .text-wrapper-14 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #3a3a3a;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 24px;
   text-decoration: underline;
+}
+
+input:hover, select:hover,
+input:focus, select:focus {
+  box-shadow: 0 0 0 2px #dadada;
+  border: 2px solid rgb(238, 184, 37);
+}
+
+.confirm-button:hover, .confirm-button:focus {
+  background-color: #367c38;
+}
+
+.save-button:hover, .save-button:focus, .add-button:hover, .add-button:focus {
+  background-color: #0c77be;
+}
+
+.text-button:hover, .text-button:focus {
+  box-shadow: 0 0 0 2px #dadada;
+  border: 2px solid rgb(212, 210, 210);
+  height: 41px;
 }
 
 /* _responsive.scss */
 /* BREAKPOINTS */
 /* MIXINS */
 /* NUEVA VENTA ---------------------------- */
+/* Media queries para dispositivos móviles */
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .search-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  input, select, button {
+    width: 100%;
+  }
+  .table-container {
+    padding: 10px;
+  }
+  table {
+    font-size: 12px;
+  }
+  th, td {
+    padding: 6px 4px;
+  }
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .confirm-button, .save-button, .text-button {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .search-container, .table-container {
+    width: 100%;
+    padding: 10px;
+  }
+  table {
+    font-size: 10px;
+  }
+  th, td {
+    padding: 4px 2px;
+  }
+}
 /* VENTAS ---------------------------- */
 @media (max-width: 1560px) {
   #main-ventas .main-de-ventas {
@@ -3108,7 +2335,7 @@ body {
 
 /* Anidamiento */
 /* HEADER Y NAVBAR -----------------------------------------------------------------------*/
-header {
+#header {
   position: relative;
   Z-index: 1;
   padding: 5px 20px;

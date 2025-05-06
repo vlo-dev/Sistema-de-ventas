@@ -22,6 +22,58 @@ $breakpoint-sm: 490px;
 
 
 /* NUEVA VENTA ---------------------------- */
+/* Media queries para dispositivos móviles */
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .search-row {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  input, select, button {
+      width: 100%;
+  }
+
+  .table-container {
+      padding: 10px;
+  }
+
+  table {
+      font-size: 12px;
+  }
+
+  th, td {
+      padding: 6px 4px;
+  }
+
+  .action-buttons {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .confirm-button, .save-button, .text-button {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 10px;
+  }
+
+  .search-container, .table-container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  table {
+      font-size: 10px;
+  }
+
+  th, td {
+      padding: 4px 2px;
+  }
+}
 
 
 /* VENTAS ---------------------------- */
