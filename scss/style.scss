@@ -19,109 +19,112 @@ $background: #EDEAEA;
 /* estilos generales */
 * {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    
+  }
+  #tooltip {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px;
   }
 body {
 background-color: $background;
+
+
 }
+
 
 
 /* Anidamiento */
 
 /* HEADER Y NAVBAR -----------------------------------------------------------------------*/
-#header {
-position: relative;
-Z-index: 1;
-padding: 5px 20px;
-background-color: $magna-negro;
-box-shadow: 0 5px 10px rgba(7, 7, 7, 0.39);
-}
 
-.navbar {
+.navbar{
+  background-color: $magna-negro;
+}
+.navbar-brand{
+  font-weight:bold;
+  color: $background;
+}
+.navbar-brand:hover{
+ color: $magna-amarillo;
+}
+/*<!-- navbar links -->*/
+.navbar .icons{
+  margin-right: 150px;
+  background-color: #212529;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown.notificaciones{
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0px 20px 0px 20px;
   
-display: flex;
-justify-content: start;
-align-items: center;
-position: relative;
 }
-
-.logo {
-  display: flex;
-  justify-content: start;
-  margin-left: 10px;
-  width: 1020px;
+.dropdown.perfil{
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0px 20px 0px 20px ;
  
 }
-.logo a {
-color: #ffffff;
-text-decoration: none;
-font-weight: bold;
-font-size: 18px;
+.dropdown.notificaciones .dropdown-toggle,
+.dropdown.perfil .dropdown-toggle {
+  background-color: $background;
+}
+.dropdown.perfil button,
+.dropdown.notificaciones button {
+  width: 50px;
+}
+.dropdown.perfil button i,
+.dropdown.notificaciones button i {
+  margin-left: 3px;
+  color: $magna-negro;
 }
 
-.nav-links {
-display: flex;
-gap: 20px;
-align-items: start;
+.dropdown.perfil button:hover,
+.dropdown.notificaciones button:hover{
+  background-color: $magna-amarillo;
+  color: $magna-amarillo;
+}
+/*notificaciones*/
+.list-group.menu a{
+  border-color: #21252925;
+  
+}
+.list-group.menu  {
+  
+  width: 280px;
 }
 
-.nav-link,
-.header-link {
-color: #c2c1c1;
-text-decoration: none;
-font-weight: bold;
-font-size: 14px;
-transition: color 0.3s;
-}
-
-.nav-link:hover,
-.header-link:hover {
-color: #ce1c1c;
-font-weight: bold;
-font-size: 14px;
-transition: color 0.9s;
-}
-
-.nav-circles {
-display: flex;
-width: 350px;
-justify-content: end;
-padding: 8px 0px;
-gap: 10px;
-}
-
-
-.circle {
-width: 30px;
-height: 30px;
-background-color: #e5e5e5;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.circle:hover {
-background-color: #d6b007;
-}
-
-/* Botón hamburguesa */
-/* Ocultar el checkbox */
-.menu-checkbox {
-    display: none;
-    position: relative;
+@media (max-width: 995px) {
+  .navbar .icons{
+    width: 150px;
+    height: 40px;
+    margin: 0px 0px 0px 500px;
+    
   }
-
-.menu-toggle {
-display: none;
-font-size: 24px;
-cursor: pointer;
-
+  .navbar-nav .dropdown.notificaciones,
+  .navbar-nav .dropdown.perfil{
+    margin: -10px 10px;
+    justify-content: start;
+    align-items: start;
+  }
 }
-
-
+@media (max-width: 720px) {
+  .navbar .icons{
+    width: 150px;
+    height: 40px;
+    margin: 0px 0px 0px 90px;
+    
+  }
+}
 
 /* FOOTER-------------------------------------------------------------------------------- */
 
@@ -269,86 +272,7 @@ footer {
 
 
 
-/* menu desktop */
-@media (min-width: 1400px) {
-  .nav-links {
-      display: none;
-      position: absolute;
-      top: 60px;
-      right: 1470px;
-      border-radius: 10px;
-      background-color: $magna-negro;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-      flex-direction: column;
-      padding: 20px;
-      width: 200px;
-      height:100dvh;
-  }
-.nav-links.active {
-  display: flex;
-  
-}
-.nav-circles {
-  display: flex;
-  width: 550px;
-  justify-content: end;
-  padding: 6px 0px;
-  gap: 10px;
-  }
- 
-  .menu-toggle {
-    display: block;
-    color: #daba07;
-}
-/* Mostrar el menú cuando el checkbox está checked */
-.menu-checkbox:checked + .menu-toggle + .nav-links {
-  display: flex;
-  font-style: italic;
-  }
-}
-/* Responsive mobile */
-@media (max-width: 508px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    justify-content: center;
-    top: 60px;
-    right: 210px;
-    background-color: $magna-negro;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    flex-direction: column;
-    padding: 20px;
-    width: 200px;
-    height:60dvh;
-}
 
-.logo{
-  width: 80px;
-}
-.nav-links.active {
-    display: flex;
-    
-}
-  .nav-circles {
-    display: flex;
-    width: 250px;
-    justify-content: end;
-    padding: 6px 0px;
-    gap: 10px;
-    }
-    
-    .menu-toggle {
-      display: block;
-      color: #daba07;
-  }
-  /* Mostrar el menú cuando el checkbox está checked */
-  .menu-checkbox:checked + .menu-toggle + .nav-links {
-    display: flex;
-    font-style: italic;
-    
-}
-}
 
 /* reaponsive footer*/
 
