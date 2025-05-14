@@ -1,9 +1,9 @@
-# <i class="devicon-ros-original-wordmark colored"></i> Sistema de Ventas
+# 💼 Sistema de Ventas
 
 Sitio web desarrollado para **DM MAGNA**, una distribuidora de bebidas ubicada en *Gral. Bustos, Córdoba capital, Argentina*. Ofrece Servicios de distribución, ventas por mayor y menor de bebidas y otros productos para comercios y otros rubros.
-🔗 Deploy: [Vista previa](https://sistema-de-ventas-two.vercel.app/index.html)
+🔗 Deploy: [Ver Sistema](https://sistema-de-ventas-two.vercel.app/index.html)
 
-## 🧑‍💻 Desarrolladora
+## 👩‍💻 Desarrolladora
 
 **Valeria Ochoa**  
 📍 Córdoba capital, Argentina.  
@@ -17,7 +17,7 @@ Sitio web desarrollado para **DM MAGNA**, una distribuidora de bebidas ubicada e
 - AOS (animaciones)
 - Font Awesome (Íconos para redes sociales y navegación )
 
-## Páginas
+## 🌐 Páginas
 Por el momento cuenta con 5 páginas html:
 - Index
 - Login
@@ -34,13 +34,13 @@ Por el momento cuenta con 5 páginas html:
 ✅ `style.scss` → Compilado en `css/styles.css` con `npm run sass`.
 ✅ Comentarios de autor incluidos en cada HTML y CSS principal.
 
-## 🚀 Instalación local (opcional)
+## 💻 Instalación local (opcional)
 
 ```bash
 npm install
 npm run sass
 ```
-## Licencia
+## 🔖 Licencia
 
 Este proyecto está licenciado bajo la licencia Creative Commons Atribución-SinDerivadas 4.0 Internacional [Licencia (CC BY-ND 4.0) ](./LICENSE.txt).
 Esta elección de licencia tiene como objetivo preservar la integridad del sistema tal como fue diseñado, evitando su alteración o redistribución modificada.
