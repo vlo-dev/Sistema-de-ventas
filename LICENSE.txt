@@ -1,0 +1,24 @@
+Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0)
+
+Copyright © 2025 Valeria Ochoa
+
+
+
+Este sistema de ventas está licenciado bajo la licencia Creative Commons Atribución-SinDerivadas 4.0 Internacional.
+Usted es libre de:
+
+Compartir — copiar y redistribuir el material en cualquier medio o formato, incluso con fines comerciales.
+
+
+Bajo las siguientes condiciones:
+
+Atribución — Debe otorgar el crédito correspondiente, proporcionar un enlace a la licencia e indicar si se han realizado cambios. Puede hacerlo de cualquier manera razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la autora.
+-SinDerivadas — No puede remezclar, transformar ni crear a partir del material. Si modifica este software, no puede distribuir el material modificado bajo esta licencia ni ninguna otra.
+Sin restricciones adicionales — No puede aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otros de hacer cualquier cosa que la licencia permita.
+Aviso legal: No se otorgan garantías con esta licencia. El software se proporciona “tal cual”, sin garantías ni condiciones de ningún tipo, ya sean expresas o implícitas.
+
+Licencia completa disponible en:
+https://creativecommons.org/licenses/by-nd/4.0/legalcode
+
+Versión legible para humanos:
+https://creativecommons.org/licenses/by-nd/4.0/
