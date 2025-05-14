@@ -48,8 +48,68 @@
       <div class="container-fluid">
         <!-- logo -->
         <a class="navbar-brand" href="../index.html">Magna</a>
+        
+        <!-- menu toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
         <!-- navbar links -->
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <!-- iconos -->
+          <div class="navbar-nav dropdown perfil">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <div class="profile-menu">
+                <a href="#" class="dropdown-item">
+                    <span class="icon-user"></span> Mi Perfil
+                </a>
+                <a href="#" class="dropdown-item">
+                    <span class="icon-gear"></span> Configuración
+                </a>
+                <a href="../pages/login.html" class="dropdown-item">
+                    <span class="icon-logout"></span> Cerrar Sesión
+                </a>
+            </div>
+            </ul>
+            
+          </div>
+          <div class="navbar-nav dropdown notificaciones">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <div class="list-group menu">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Nuevo ingreso</h5>
+                    <small>Peñaflor</small>
+                  </div>
+                  <p class="mb-1">Vinos</p>
+                  <small>Hace 5 min</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Brahma cajon</h5>
+                    <small class="text-body-secondary">Quilmes</small>
+                  </div>
+                  <p class="mb-1">Stock bajo de producto</p>
+                  <small class="text-body-secondary">Hace 1 hora</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h6 class="mb-1">Ver todas las notificaciones</h6>
+                  </div>
+                  
+                </a>
+              </div>
+            </ul>
+            
+          </div>
+          
+          <!-- links -->
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -171,67 +231,7 @@
             </li>
           </ul>
         </div>
-        <!-- navbar iconos -->
-        <section class="navbar icons">
-          <div class="navbar-nav dropdown notificaciones">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-bell"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <div class="list-group menu">
-                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Nuevo ingreso</h5>
-                    <small>Peñaflor</small>
-                  </div>
-                  <p class="mb-1">Vinos</p>
-                  <small>Hace 5 min</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Brahma cajon</h5>
-                    <small class="text-body-secondary">Quilmes</small>
-                  </div>
-                  <p class="mb-1">Stock bajo de producto</p>
-                  <small class="text-body-secondary">Hace 1 hora</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h6 class="mb-1">Ver todas las notificaciones</h6>
-                  </div>
-                  
-                </a>
-              </div>
-            </ul>
-            
-          </div>
-          <div class="navbar-nav dropdown perfil">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-user"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <div class="profile-menu">
-                <a href="#" class="dropdown-item">
-                    <span class="icon-user"></span> Mi Perfil
-                </a>
-                <a href="#" class="dropdown-item">
-                    <span class="icon-gear"></span> Configuración
-                </a>
-                <a href="../pages/login.html" class="dropdown-item">
-                    <span class="icon-logout"></span> Cerrar Sesión
-                </a>
-            </div>
-            </ul>
-            
-          </div>
-        </section>
-        
-        
-
-        <!-- menu toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      
       </div>
     </nav>
   
@@ -242,10 +242,12 @@
   <!--MAIN-->
 
   <main id="main-index">
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
     <div class="welcome-message">
       <h1>¡Hola Florencia! Elegí alguna de las siguientes opciones para comenzar a trabajar.</h1>
     </div>
-
+    </div>
 
 
     <div class="options-container">

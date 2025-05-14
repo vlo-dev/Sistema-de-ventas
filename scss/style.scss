@@ -41,9 +41,7 @@ background-color: $background;
 
 /* HEADER Y NAVBAR -----------------------------------------------------------------------*/
 
-.navbar{
-  background-color: $magna-negro;
-}
+
 .navbar-brand{
   font-weight:bold;
   color: $background;
@@ -52,56 +50,7 @@ background-color: $background;
  color: $magna-amarillo;
 }
 /*<!-- navbar links -->*/
-.navbar .icons{
-  margin-right: 150px;
-  background-color: #212529;
-  justify-content: center;
-  align-items: center;
-}
-.dropdown.notificaciones{
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  margin: 0px 20px 0px 20px;
-  
-}
-.dropdown.perfil{
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  margin: 0px 20px 0px 20px ;
- 
-}
-.dropdown.notificaciones .dropdown-toggle,
-.dropdown.perfil .dropdown-toggle {
-  background-color: $background;
-}
-.dropdown.perfil button,
-.dropdown.notificaciones button {
-  width: 50px;
-}
-.dropdown.perfil button i,
-.dropdown.notificaciones button i {
-  margin-left: 3px;
-  color: $magna-negro;
-}
 
-.dropdown.perfil button:hover,
-.dropdown.notificaciones button:hover{
-  background-color: $magna-amarillo;
-  color: $magna-amarillo;
-}
-/*notificaciones*/
-.list-group.menu a{
-  border-color: #21252925;
-  
-}
-.list-group.menu  {
-  
-  width: 280px;
-}
 
 @media (max-width: 995px) {
   .navbar .icons{
@@ -110,19 +59,28 @@ background-color: $background;
     margin: 0px 0px 0px 500px;
     
   }
-  .navbar-nav .dropdown.notificaciones,
-  .navbar-nav .dropdown.perfil{
-    margin: -10px 10px;
+  .navbar-nav .icon{
     justify-content: start;
     align-items: start;
+    
+  }
+  .navbar-nav.dropdown.notificaciones button,
+  .navbar-nav.dropdown.perfil button{
+    background-color: $magna-amarillo;
+    margin-top: 5px;
   }
 }
 @media (max-width: 720px) {
   .navbar .icons{
-    width: 150px;
-    height: 40px;
-    margin: 0px 0px 0px 90px;
+    width: 130px;
+    height: 60px;
+   
     
+  }
+  .navbar-nav.dropdown.notificaciones button,
+  .navbar-nav.dropdown.perfil button{
+    background-color: $magna-amarillo;
+    margin-top: 5px;
   }
 }
 
