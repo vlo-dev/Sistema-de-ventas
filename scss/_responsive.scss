@@ -82,89 +82,75 @@ $breakpoint-sm: 490px;
   }
 
 /* VENTAS ---------------------------- */
-@media (max-width: 1560px) {
+@media (max-width: 768px) {
+  #main-ventas {
+      flex-direction: column;
+      padding-top: 0px;
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        margin: none;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 10px 15px;
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .sidebar-title {
+        display: none;
+    }
+    
+    .sidebar-item {
+        margin-right: 15px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .button-group {
+        width: auto;
+    }
+    
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .data-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 
-  #main-ventas .main-de-ventas {
-    
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
-    width: 100%;
-    overflow-y: auto;
-    /* SIDEBAR FILTER */
-    .sidebar-filter {
-      width: 95%;
-      height: auto;
-      padding: 15px;
-      
-    }
-    .text-4 {
-      width:  85%;
-    }
-    .form-select {
-      width: 100%;
-    }
-    
-    .text-wrapper-5 {
-      width: 100%;
-    }
-    /* REGISTRO VENTAS */
-    .registro-ventas {
-      width: 95%;
-      height: auto;
-      margin-left: 0;
-     
-    }
-    
-    .historico-ventas {
-      width: 100%;
-      left: 0;
-      padding: 10px;
-    }
-    
-    .hit-vent {
-      width:60%;
-      padding: 2px 10px;
-    }
-    
-    .hist-rico-de-ventas {
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 24px;      
-      
-    }
-    
-    .span {
-      font-size: 24px;
-    }
-    
-    .bton-exp {
-      width: 140%;
-      left: 0;
-      position: relative;
-    }
-    
-    .bton-accion {
-      position: relative;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-    
-    /* TABLA DE VENTAS */
-    .detalle-de-articulos {
-      width: 95%;
-      left: 0;
-      overflow-x: auto;
-      height: auto;
-    }
-    
-    .campos-de-detalles {
-      width: 100%;
-      left: 0;
-      min-width: 600px; /* Para permitir scroll horizontal */
-    }
+  }
+  
+  
+}
+
+
+@media (max-width: 480px) {
+  #main-ventas {
+    .main-content {
+      padding: 20px;
+  }
+  
+  .btn {
+      width: auto;
+      padding: 6px 10px;
+      font-size: 12px;
+  }
+  
+  .data-table th,
+  .data-table td {
+      padding: 8px 10px;
+      font-size: 12px;
+  }
   }
   
 }
@@ -230,6 +216,7 @@ $breakpoint-sm: 490px;
   }
   
   .btn {
+      width: auto;
       padding: 6px 10px;
       font-size: 12px;
   }

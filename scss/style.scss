@@ -40,8 +40,7 @@ background-color: $background;
 /* Anidamiento */
 
 /* HEADER Y NAVBAR -----------------------------------------------------------------------*/
-
-
+#header {
 .navbar-brand{
   font-weight:bold;
   color: $background;
@@ -49,6 +48,10 @@ background-color: $background;
 .navbar-brand:hover{
  color: $magna-amarillo;
 }
+}
+
+
+
 /*<!-- navbar links -->*/
 
 

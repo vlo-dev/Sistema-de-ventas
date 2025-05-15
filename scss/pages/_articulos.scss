@@ -84,10 +84,11 @@
 
 .button-group {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .btn {
+  
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 14px;
@@ -112,6 +113,7 @@
 }
 
 .btn-search {
+  width: 75px;
   background-color: #3182ce;
 }
 
@@ -170,7 +172,7 @@
 .data-table td {
   padding: 12px 15px;
   font-size: 14px;
-  color: #4a5568;
+  
   border-bottom: 1px solid #e2e8f0;
 }
 

@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--SEO-->
+    <meta name="keyboards" content="sistema de ventas, registro de ventas, ventas, metricas, sistema para comercio, registro de clientes">
+    <meta name="author" content="Sistema de ventas VLO">
 
     <!--BOOTSTRAP CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -239,308 +241,160 @@
   <!--MAIN-->
 
   <main id="main-ventas">
-    <div class="main-de-ventas">
+    
 
-      <!--FILTROS-->
-        <div class="sidebar-filter">
-          <div class="filtro-ventas">
-            <div class="title-filtros"><div class="text-wrapper">Filtros</div></div>
+  <!--sidebar-->
+    <div class="sidebar">
+      <h3 class="sidebar-title">Filtros</h3>
 
-            <!--MENU fecha desde SELECT-->
-            <div class="div-wrapper">
-              <div class="div">
-                <div class="icon-set"><img class="img" src="img/image.svg" /></div>
-                <div class="text"><select class="form-select" aria-label="Default select example">
-                  <option selected>Fecha desde</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select></div>
-              </div>
-            </div>
+      <div class="sidebar-item">
+      <i class="fa-solid fa-calendar-days"></i>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Fecha desde</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
 
-            <!--MENU fecha hasta SELECT-->
-            <div class="div-wrapper">
-              <div class="div">
-                <div class="icon-set"><img class="img" src="img/shopping-bag-open.svg" /></div>
-                <div class="text"><select class="form-select" aria-label="Default select example">
-                  <option selected>Fecha hasta</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select></div>
-              </div>
-            </div>
+        
+      </div>
 
-            <!--MENU tipo de pago SELECT-->
-            <div class="div-wrapper">
-              <div class="div">
-                <div class="img-wrapper"><img class="img" src="img/book-open.svg" /></div>
-                <div class="text-2"><select class="form-select" aria-label="Default select example">
-                  <option selected>Tipo de pago</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select></div>
-              </div>
-            </div>
+      <div class="sidebar-item">
+      <i class="fa-solid fa-calendar-days"></i>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Fecha hasta</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      </div>
 
-            <!--MENU ESTADO SELECT-->
-            <div class="div-wrapper">
-              <div class="e-d">
-                <div class="icon-set"><img class="img" src="img/folder-notch.svg" /></div>
-                <div class="text-3"><select class="form-select" aria-label="Default select example">
-                  <option selected>Estado</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select></div>
-              </div>
-            </div>
+      <div class="sidebar-item">
+      <i class="fa-solid fa-money-check-dollar"></i>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Tipo de pago</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      </div>
 
-            <!--inputs-->
-            <div class="div-wrapper">
-              <div class="div-2">
-                <div class="icon-set"><img class="img" src="img/identification-card.svg" /></div>
-                <div class="text-4"><input class="text-wrapper-5" type="text" placeholder="Cliente.."></div>
-              </div>
-            </div>
-            <div class="div-wrapper">
-              <div class="div-2">
-                <div class="img-wrapper"><img class="img" src="img/chart-pie-slice.svg" /></div>
-                <div class="text-4"><input class="text-wrapper-5" type="text" placeholder="Ventas.."></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="sidebar-item">
+      <i class="fas fa-check-circle"></i>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Estado</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      </div>
 
-      <!--VENTAS-->
-        <div class="registro-ventas">
-          <div class="historico-ventas">
-            <div class="hit-vent">
-              <p class="hist-rico-de-ventas"><span class="span">Histórico de ventas</span></p>
-            </div>
-          </div>
-          <div class="bton-exp">
-            <div class="bton-accion">
-              <div class="bton-exportar">
-                <div class="icon-text">
-                  <div class="div-wrapper-2"><div class="text-wrapper-6">Exportar</div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="detalle-de-articulos">
-            <div class="campos-de-detalles">
-              <div class="columna-uno">
-                <div class="campos-columna-g">
-                  <div class="div-wrapper-3">
-                    <div class="num-id">
-                      <div class="text-5"><div class="text-wrapper-7">235825</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="num-id">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">235824</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="num-id">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">235822</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="num-id">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">235821</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="num-id">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">235820</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="num-id">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">235819</div></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="detalle-g">
-                  <div class="text-6"><div class="text-wrapper-8">ID#</div></div>
-                </div>
-              </div>
-              <div class="columna-dos">
-                <div class="campos-columna-f">
-                  <div class="fech">
-                    <div class="num-fech">
-                      <div class="text-7"><div class="text-wrapper-9">02/05/2025</div></div>
-                    </div>
-                  </div>
-                  <div class="fech">
-                    <div class="num-fech">
-                      <div class="text-7"><div class="text-wrapper-7">02/05/2025</div></div>
-                    </div>
-                  </div>
-                  <div class="fech">
-                    <div class="num-fech">
-                      <div class="text-7"><div class="text-wrapper-9">02/05/2025</div></div>
-                    </div>
-                  </div>
-                  <div class="fech">
-                    <div class="num-fech-2">
-                      <div class="text-7"><div class="text-wrapper-9">02/05/2025</div></div>
-                    </div>
-                  </div>
-                  <div class="fech">
-                    <div class="num-fech">
-                      <div class="div-wrapper-2"><div class="text-wrapper-9">02/05/2025</div></div>
-                    </div>
-                  </div>
-                  <div class="fech">
-                    <div class="num-fech">
-                      <div class="div-wrapper-2"><div class="text-wrapper-9">02/05/2025</div></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="detalle-f">
-                  <div class="text-6"><div class="text-wrapper-10">Fecha</div></div>
-                </div>
-              </div>
-              <div class="columna-tres">
-                <div class="campos-columna-e">
-                  <div class="div-wrapper-3">
-                    <div class="camp">
-                      <div class="div-wrapper-2"><p class="text-wrapper-7">No - Disponible / Zona #</p></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="camp">
-                      <div class="div-wrapper-2"><p class="text-wrapper-7">No - Disponible / Zona #</p></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="camp">
-                      <div class="div-wrapper-2"><p class="text-wrapper-7">No - Disponible / Zona #</p></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="camp">
-                      <div class="div-wrapper-2"><p class="text-wrapper-7">No - Disponible / Zona #</p></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="camp">
-                      <div class="div-wrapper-2"><p class="text-wrapper-7">No - Disponible / Zona #</p></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="camp">
-                      <div class="div-wrapper-2"><p class="text-wrapper-7">No - Disponible / Zona #</p></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="detalle-e">
-                  <div class="text-8"><div class="text-wrapper-11">Cliente</div></div>
-                </div>
-              </div>
-              <div class="columna-cuatro">
-                <div class="div-3">
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">$ 1500,00</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">$ 2200,00</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">$ 9300,00</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">$ 6900,00</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">$ 12200,00</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">$ 23800,00</div></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="detalle-b">
-                  <div class="text-6"><div class="text-wrapper-12">Monto ($)</div></div>
-                </div>
-              </div>
-              <div class="columna-cinco">
-                <div class="div-3">
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">Realizada</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">Pagada</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">Pagada</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">Pagada</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">Pagada</div></div>
-                    </div>
-                  </div>
-                  <div class="div-wrapper-3">
-                    <div class="div-wrapper-4">
-                      <div class="div-wrapper-2"><div class="text-wrapper-7">Pagada</div></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="detalle-a">
-                  <div class="frame"><div class="text-wrapper-13">Estado</div></div>
-                </div>
-              </div>
-              <div class="columna-seis">
-                <div class="div-4">
-                  <div class="div-5"><img class="eliminar" src=""></div>
-                  <div class="div-5"><i class="fi fi-tr-circle-xmark"></i></div>
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                </div>
-              </div>
-              <div class="columna-siete">
-                <div class="div-4">
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                  <div class="div-5"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
     </div>
+
+  <!--VENTAS-->
+  
+    <div class="main-content">
+    <div class="content-header">
+    <h1 class="content-title">Histórico de ventas</h1>
+  
+    <div class="button-group">
+      <button class="btn btn-export">Exportar</button>
+    </div>
+    </div>
+
+    <div class="search-container">
+      <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search-input" placeholder="Código de venta...">
+      </div>
+  
+      <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search-input" placeholder="Cliente...">
+      </div>
+      
+      <button class="btn btn-search">Buscar</button>
+    </div>
+
+<table class="data-table">
+  <thead>
+      <tr>
+          <th>ID#</th>
+          <th>Fecha</th>
+          <th>Cliente</th>
+          <th>Monto</th>
+          <th>Estado</th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td class="code-cell">235825</td>
+          <td>02/05/2025</td>
+          <td>No - Disponible / Zona #</td>
+          <td>$ 1500,00</td>
+          <td class="status-active">Realizada</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td class="code-cell">235824</td>
+          <td>02/05/2025</td>
+          <td>No - Disponible / Zona #</td>
+          <td>$ 2200,00</td>
+          <td class="status-active">Pagada</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td class="code-cell">235822</td>
+          <td>02/05/2025</td>
+          <td>No - Disponible / Zona #</td>
+          <td>$ 9300,00</td>
+          <td class="status-active">Pagada</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td class="code-cell">235821</td>
+          <td>02/05/2025</td>
+          <td>No - Disponible / Zona #</td>
+          <td>$ 6900,00</td>
+          <td class="status-active">Pagada</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td class="code-cell">235820</td>
+          <td>02/05/2025</td>
+          <td>No - Disponible / Zona #</td>
+          <td>$ 12200,00</td>
+          <td class="status-active">Pagada</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td class="code-cell">235819</td>
+          <td>02/05/2025</td>
+          <td>No - Disponible / Zona #</td>
+          <td>$ 23800.00</td>
+          <td class="status-active">Pagada</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+    
   </main>
 
 
