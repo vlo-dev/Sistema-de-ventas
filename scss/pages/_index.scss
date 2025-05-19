@@ -11,6 +11,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   min-height: 90vh;
@@ -20,7 +21,7 @@
 #main-index .welcome-message {
   text-align: center;
   max-width: 800px;
-  margin-top: 70px;
+  margin: 10px 0 0px;
 }
 
 #main-index .welcome-message h1 {
@@ -34,28 +35,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   gap: 16px;
-  min-height: 300px;
-}
-
-/* Botones de flecha */
-#main-index .options-container button {
-  background-color: #302d20;
-  border: none;
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#main-index .options-container button:hover {
-  background-color: #ebc107;
+  height: 180px;
 }
 
 /* Contenedor de tarjetas */
@@ -66,11 +48,11 @@
 
 /* Cada tarjeta */
 #main-index .options-container div a {
-  height: 150px;
+  height: 50px;
   width: 150px;
   background-color: rgb(255, 255, 255);
   border: 1px solid #d1d0d0;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 15px 30px;
   text-decoration: none;
   color: #666;
@@ -80,18 +62,121 @@
   align-items: center;
   justify-content: center;
 }
-
+#main-index .fa-address-card, .fa-magnifying-glass-chart, .fa-martini-glass, .fa-cart-plus {
+  width: 40;
+  height: 40;
+  margin-right: 10px;
+}
 #main-index .options-container div a:hover {
-  background-color: rgb(228, 189, 18);
+  background-color: #ce9f06;
   color: #272727;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.division {
+    height: 1px;
+    background-color: #d4d4d4;
+    width: 100%;
+    max-width: 1900px;
+    margin: 0px 0px 20px 0px;
+}
 
+/* FLIP CARD */
+.section-title {
+  font-size: 1.6rem;
+  color: #333;
+  padding-left: 10px;
+}
+.section-title.fp{
+  font-size: 1.8rem;
+  margin: 0px 0px 1px;
+}
+.section-title.tf{
+  margin: 120px 0px 15px;
+  
+}
 
+.flip {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 55px;
+  gap: 16px;
+}
 
+.flip-container {
+  perspective: 1000px;
+  width: 288px;
+  height: 400px;
+}
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 
-
+}
+.flip-card-front {
+  background-color: #ce9f06;
+  color: #1d1d1d;
+  font-weight: bolder;
+}
+.flip-card-front img{
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+  }
+  .flip-card-front h5{
+    font-weight: bolder;
+    font-size: 16px;
+  }
+.flip-card-back {
+  background-color: #1d1d1d;
+  color: #e4e4e4;
+  transform: rotateY(180deg);
+}
+.flip-card-back img {
+  width: 150px;
+  height: 140px;
+  margin-top: 20px;
+}
+  .flip-card-back h5{
+    font-size:large;
+    font-weight: bolder;
+    
+  }
+  .flip-card-back .card-body .btn-primary {
+    background-color: #ce9f06;
+    border-color: rgb(240, 204, 1);
+    color: #1d1d1d;
+    font-weight: bold;
+  }
+  .flip-card-back .card-body .btn-primary:hover{
+    background-color: #9b8233;
+    border-color: rgb(201, 182, 73);
+    color: #080808;
+  }
+  .flip-card-back p{
+    font-size:medium;
+    width: 230px;
+  }
 
 @media (max-width: 900px) {
   #main-index .options-container div a {
@@ -103,14 +188,15 @@
 }
 
 @media (max-width: 600px) {
+  #main-index {
+    overflow-y: (scroll);
+  } 
   #main-index .options-container {
     flex-direction: column;
     gap: 20px;
   }
 
-  #main-index .options-container button {
-    display: none;
-  }
+
 
   #main-index .options-container div {
     flex-wrap: wrap;
@@ -118,8 +204,8 @@
   }
 
   #main-index .options-container div a {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 30%;
     font-size: 13px;
     padding: 10px;
   }
@@ -127,6 +213,59 @@
   #main-index .welcome-message h1 {
     font-size: 16px;
     padding: 0 10px;
+  }
+  #main-index .section-title.fp {
+  margin: 5px 0px 15px;
+  }
+  #main-index .section-title.tf {
+  margin: 200px 0px 15px;
+  }
+
+    #main-index .flip {
+      width: auto;
+      height: 800px;
+      margin:  10px 0px;
+      flex-direction: column;
+      gap: 20px;
+      
+  }
+  #main-index .flip div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  //la card gira al ser presionada en pantalla
+  #main-index .flip-container:checked .flip-card {
+  transform: rotateY(180deg);
+}
+  #main-index .flip-card-back .card-body .btn-primary:checked{
+    background-color: #9b8233;
+    border-color: rgb(201, 182, 73);
+    color: #080808;
+  }
+  #main-index .flip-card-front {
+  width: 288px;
+  height: 180px;
+}
+  #main-index .flip-card-front img{
+    width: 90px;
+    height: 90px;
+  }
+  #main-index .flip-card-back {
+  width: 288px;
+  height: 180px;
+}
+  
+  #main-index .flip-card-back img{
+  width: 95px;
+  height: 90px;
+  margin-left: 8px;
+  }
+  #main-index .flip-card-back h5{
+    font-size: medium;
+  }
+   #main-index .flip-card-back p{
+    font-size:12px;
+    width: 160px;
   }
 }
 
