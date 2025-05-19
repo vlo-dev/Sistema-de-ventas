@@ -24,6 +24,7 @@ Por el momento cuenta con 5 páginas html:
 - Articulos
 - Ventas
 - Nueva Venta
+- 🛠️ Error 503 - Servicio no disponible (por mantenimiento)
 
 ## 🚀 Funcionalidades Clave 
 ✅ Menú hamburguesa sin JS 
