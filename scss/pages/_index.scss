@@ -37,7 +37,7 @@
   justify-content: center;
   width: 80%;
   gap: 16px;
-  height: 180px;
+  height: 10px;
 }
 
 /* Contenedor de tarjetas */
@@ -87,10 +87,7 @@
   color: #333;
   padding-left: 10px;
 }
-.section-title.fp{
-  font-size: 1.8rem;
-  margin: 0px 0px 1px;
-}
+
 .section-title.tf{
   margin: 120px 0px 15px;
   
@@ -213,9 +210,6 @@
   #main-index .welcome-message h1 {
     font-size: 16px;
     padding: 0 10px;
-  }
-  #main-index .section-title.fp {
-  margin: 5px 0px 15px;
   }
   #main-index .section-title.tf {
   margin: 200px 0px 15px;
