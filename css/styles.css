@@ -378,6 +378,7 @@
   #main-index .options-container {
     flex-direction: column;
     gap: 20px;
+    margin-top: 80px;
   }
   #main-index .options-container div {
     flex-wrap: wrap;
