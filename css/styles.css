@@ -598,6 +598,12 @@
   border-radius: 3px;
   padding: 2px 4px;
 }
+#main-articulos #pag {
+  margin-top: 10px;
+}
+#main-articulos .pagination {
+  justify-content: center;
+}
 
 /* Anidamiento */
 /* ----------------------------------PAGINA "VENTAS"---------------------------------------- */
@@ -748,6 +754,12 @@
   background-color: #f8fafc;
   border-radius: 3px;
   padding: 2px 4px;
+}
+#main-ventas #pag {
+  margin-top: 10px;
+}
+#main-ventas .pagination {
+  justify-content: center;
 }
 
 /* Anidamiento */
